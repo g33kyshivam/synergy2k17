@@ -1,0 +1,303 @@
+<!doctype html>
+<html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Registration</title>  <!-- To be updated -->
+        <meta name="description" content=""> <!-- Content has to be added -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!--<link rel="stylesheet" href="css/normalize.min.css">-->
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<!--  <link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/css/bootstrap-switch.css' rel='stylesheet' type='text/css'>
+  <link href='http://davidstutz.github.io/bootstrap-multiselect/css/bootstrap-multiselect.css' rel='stylesheet' type='text/css'>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js' type='text/javascript'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js' type='text/javascript'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js' type='text/javascript'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/js/bootstrap-switch.min.js' type='text/javascript'></script>
+  <script src='http://davidstutz.github.io/bootstrap-multiselect/js/bootstrap-multiselect.js' type='text/javascript'></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAvhp2rY4d9yhUNFwJfTnUJPteKXwfvQUg",
+    authDomain: "bkchodi-a6500.firebaseapp.com",
+    databaseURL: "https://bkchodi-a6500.firebaseio.com",
+    storageBucket: "bkchodi-a6500.appspot.com",
+    messagingSenderId: "54518278820"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-messaging.js"></script>
+
+<!-- Leave out Storage -->
+<!-- <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-storage.js"></script> -->
+<!--
+<script>
+  var config = {
+    // ...
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+  <a href="C:\Users\Snyper_Drydan\Desktop\new 1.css" type ="text/css" rel="stylesheet">-->
+
+
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Baby Care</h1> <!-- TITLE HAS TO BE SAME AS THAT OF THE PROJECT AND ABOVE TITLE UNDER HEAD TAG -->
+                <nav>
+                    <ul>
+                      	<li><a href="index.html">Home</a></li>
+                      	<li><a href="registration.html">Register</a></li>
+                        <li><a href="vaccine.html">Vaccine</a></li>
+                        <li><a href="locate.html">Locate</a></li>
+                                         </ul>
+                </nav>
+            </header>
+        </div>
+
+         <div class='container'>
+    <div class='panel panel-primary dialog-panel'>
+      <div class='panel-heading'>
+        <h5>Registration For Immunization</h5>
+      </div>
+      <div class='panel-body'>
+        <form class='form-horizontal' role='form'>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_title'>Name</label>
+            <div class='col-md-8'>
+              <div class='col-md-2'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_first_name' placeholder='First Name' type='text'>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_last_name' placeholder='Last Name' type='text'>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_gender'>Gender</label>
+            <div class='col-md-2'>
+              <select class='form-control' id='id_gender'>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_title1'>Mother's Name</label>
+            <div class='col-md-8'>
+              <div class='col-md-2'>
+                <div class='form-group internal'>
+                  <select class='form-control' id='id_title1'>
+                    <option>Mrs</option>
+                    <option>Dr</option>
+                  </select>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_first_name1' placeholder='First Name' type='text'>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_last_name1' placeholder='Last Name' type='text'>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_title2'>Father's Name</label>
+            <div class='col-md-8'>
+              <div class='col-md-2'>
+                <div class='form-group internal'>
+                  <select class='form-control' id='id_title'>
+                    <option>Mr</option>
+                    <option>Dr</option>
+                  </select>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_first_name' placeholder='First Name' type='text'>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_last_name' placeholder='Last Name' type='text'>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_email'>Contact</label>
+            <div class='col-md-6'>
+              <div class='form-group'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_email' placeholder='E-mail' type='text'>
+                </div>
+              </div>
+              <div class='form-group internal'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_phone' placeholder='Phone: (xxx) - xxx xxxx' type='text'>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            
+             <label class='control-label col-md-2 col-md-offset-2'  for="dob-day" class="control-label">Date of birth</label>
+  <div class="controls">
+    <select name="dob-day" id="dob-day">
+      <option value="">Day</option>
+      <option value="">---</option>
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+      <option value="07">07</option>
+      <option value="08">08</option>
+      <option value="09">09</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+    </select>
+    <select name="dob-month" id="dob-month">
+      <option value="">Month</option>
+      <option value="">-----</option>
+      <option value="01">January</option>
+      <option value="02">February</option>
+      <option value="03">March</option>
+      <option value="04">April</option>
+      <option value="05">May</option>
+      <option value="06">June</option>
+      <option value="07">July</option>
+      <option value="08">August</option>
+      <option value="09">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </select>
+    <select name="dob-year" id="dob-year">
+      <option value="">Year</option>
+      <option value="">----</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+       </select>
+  </div>
+</div>
+            
+            
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_add'>Address</label>
+            <div class='col-md-8'>
+              <div class='col-md-2'>
+                <div class='col-md-3 indent-small'></div>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_addline1' placeholder='Address Line 1' type='string'>
+                </div>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_city' placeholder='City' type='text'>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_addline2' placeholder='Address Line 2' type='string'>
+                </div>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_state' placeholder='State' type='text'>
+                </div>
+              </div>
+              <div class='col-md-8'>
+              <div class='col-md-3'>
+                
+              </div>
+            </div>
+              <button class='btn-lg btn-danger' style='float:right' type='submit'>Reset</button>
+              <button class='btn-lg btn-default' color='solid green' button style='float:right' onclick="alert(Math.random());"type='submit'>Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+ <button type='submit'</button>
+window.location = "'.$SITE_URL.'index.php?view=view_service."
+</script>';
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAvhp2rY4d9yhUNFwJfTnUJPteKXwfvQUg",
+    authDomain: "bkchodi-a6500.firebaseapp.com",
+    databaseURL: "https://bkchodi-a6500.firebaseio.com",
+    storageBucket: "bkchodi-a6500.appspot.com",
+    messagingSenderId: "54518278820"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+
+        <div class="footer-container">
+            <footer class="wrapper">
+             <h4>Designed By : d_CoDerS</h4>
+            </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
+
+
